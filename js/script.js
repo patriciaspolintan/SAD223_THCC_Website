@@ -92,7 +92,7 @@ sr.reveal(`.about-details, .time-table`, { origin: 'right' })
 
 // COUNTER
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 1;
+let interval = 500; // Decreased interval value for faster counting
 
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
@@ -106,6 +106,7 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
 
 // ACCORDION
 let li = document.querySelectorAll(".faq-text li");
